@@ -58,3 +58,4 @@ Kekurangan Program
 Program ini adalah alat sederhana tapi sangat berguna untuk mengelola data mahasiswa. Cocok untuk belajar dasar-dasar pemrograman Python sambil membuat sesuatu yang praktis!
 
 Flowchart Program
+![Screenshot (59)](https://github.com/user-attachments/assets/b8d757d3-890c-4217-af7b-5500a7a57f76)
