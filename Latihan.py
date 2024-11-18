@@ -1,38 +1,33 @@
-# 1. Membuat sebuah list dengan 5 elemen
-A = [10, 20, 30, 40, 50]
+# Membuat dictionary daftar kontak
+kontak = {
+    "Ari": "081267888",
+    "Dina": "087677776"
+}
 
-# 2. Akses list:
-# • Menampilkan elemen ke-3
-print("Elemen ke-3:", A[2])
+# Menampilkan kontak Ari
+print("Kontak Ari:", kontak["Ari"])
 
-# • Mengambil nilai elemen ke-2 sampai ke-4
-print("Elemen ke-2 sampai ke-4:", A[1:4])
+# Menambah kontak baru dengan nama Riko
+kontak["Riko"] = "087654544"
 
-# • Mengambil elemen terakhir
-print("Elemen terakhir:", A[-1])
+# Mengubah kontak Dina dengan nomor baru
+kontak["Dina"] = "088999776"
 
-# 3. Ubah elemen list:
-# • Mengubah elemen ke-4 dengan nilai lainnya
-A[3] = 100
-print("Setelah mengubah elemen ke-4:", A)
+# Menampilkan semua nama
+print("Daftar Nama:", list(kontak.keys()))
 
-# • Mengubah elemen ke-4 sampai elemen terakhir
-A[3:] = [200, 300]
-print("Setelah mengubah elemen ke-4 sampai ke-akhir:", A)
+# Menampilkan semua nomor
+print("Daftar Nomor:", list(kontak.values()))
 
-# 4. Tambah elemen list:
-# • Ambil 2 bagian dari list pertama (A) dan jadikan list ke-2 (B)
-B = A[0:2]
-print("List B (bagian dari A):", B)
+# Menampilkan daftar nama dan nomor
+print("Daftar Nama dan Nomor:")
+for nama, nomor in kontak.items():
+    print(f"{nama}: {nomor}")
 
-# • Tambah list B dengan nilai string
-B.append("Python")
-print("List B setelah ditambah string:", B)
+# Menghapus kontak Dina
+del kontak["Dina"]
 
-# • Tambah list B dengan 3 nilai
-B.extend([30, 40, 50])
-print("List B setelah ditambah 3 nilai:", B)
-
-# • Gabungkan list B dengan list A
-B.extend(A)
-print("List B setelah digabungkan dengan A:", B)
+# Menampilkan daftar kontak setelah Dina dihapus
+print("Daftar Kontak setelah Dina dihapus:")
+for nama, nomor in kontak.items():
+    print(f"{nama}: {nomor}")
